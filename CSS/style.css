@@ -22,24 +22,24 @@
     margin-top: 25px;
     position: absolute;
     float: left;
-    top: 11%;
-    left: 302px;
+    top: 22%;
+    left: 5%;
 }
 #pointer_i_img{
     display: flex;
     height: 60px;
     position: absolute;
     float: left;
-    top: 18%;
-    left: 304px;
+    top: 30%;
+    left: 5%;
 }
 #dv_array{
     display: flex;
     height: 56px;
     position: absolute;
     float: left;
-    top: 30%;
-    left: 303px;
+    top: 40%;
+    left: 5%;
 
 }
 #dv_inform{
@@ -47,8 +47,8 @@
     height: 30px;
     position: absolute;
     float: left;
-    top: 36%;
-    left: 302px;
+    top: 48%;
+    left: 5%;
 }
 #pointer_j{
     display: flex;
@@ -56,23 +56,23 @@
     margin-top: 25px;
     position: absolute;
     float: left;
-    top: 42%;
-    left: 302px;
+    top: 53%;
+    left: 5%;
 }
 #pointer_j_img{
     display: flex;
     height: 60px;
     position: absolute;
     float: left;
-    top: 40%;
-    left: 304px;
+    top: 50%;
+    left: 5%;
 }
 #dv_footer{
     display: flex;
     position: absolute;
     float: left;
-    top: 50%;
-    left: 1200px;
+    top: 60%;
+    left: 60%;
 }
 
 #source_code{
