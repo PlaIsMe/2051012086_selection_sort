@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+}
+#main{
+    display: flex;
+    flex-direction: row;
+    background-color: #B0C5DE;
+    min-height: 100vh;
+}
+#dv_main{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+#dv_header{
+    height: 100px;
+    margin: 15px;
+}
+#pointer_i{
+    display: flex;
+    height: 60px;
+    margin-top: 25px;
+    position: absolute;
+    float: left;
+    top: 11%;
+    left: 302px;
+}
+#pointer_i_img{
+    display: flex;
+    height: 60px;
+    position: absolute;
+    float: left;
+    top: 18%;
+    left: 304px;
+}
+#dv_array{
+    display: flex;
+    height: 56px;
+    position: absolute;
+    float: left;
+    top: 30%;
+    left: 303px;
+
+}
+#dv_inform{
+    display: flex;
+    height: 30px;
+    position: absolute;
+    float: left;
+    top: 36%;
+    left: 302px;
+}
+#pointer_j{
+    display: flex;
+    height: 60px;
+    margin-top: 25px;
+    position: absolute;
+    float: left;
+    top: 42%;
+    left: 302px;
+}
+#pointer_j_img{
+    display: flex;
+    height: 60px;
+    position: absolute;
+    float: left;
+    top: 40%;
+    left: 304px;
+}
+#dv_footer{
+    display: flex;
+    position: absolute;
+    float: left;
+    top: 50%;
+    left: 1200px;
+}
+
+#source_code{
+    border: 1px solid black;
+    width: 20%;
+    height: 550px;
+    margin: 15px;
+    background-color: white;
+    font-weight: bold;
+}
+input#number{
+    width: 50px;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+input#array{
+    width: 90%;
+    margin: 15px;
+    margin-top: 0px;
+    font-weight: bold;
+    height: 40px;
+    line-height: 40px;
+    font-size: 38px;
+}
+p{
+    margin: 15px;
+    margin-bottom: 0;
+}
+div[id*=div]{
+    border: 3px solid lightgray;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    font-size:30px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px;
+    position: relative;
+    float: left;
+}
+
+div[id*=pnt_up]{                   
+    width: 56px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    margin: 10px;
+    font-size: 20px;
+}
+
+img{
+    width: 50px;
+    height: 50px;    
+}
+
+div[id*=imgdown]{
+    margin: 13px;    
+}
+
+div[id*=imgup]{
+    margin: 13px;
+}
+
+div[id*=pnt_down]{                   
+    width: 56px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    margin: 10px;
+    font-size: 20px; 
+}
+div[id*=infrm]{
+    width: 56px;
+    height: 20px;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 20px;
+    color: blue;
+}
+button[id*=control]{
+    width: 70px;
+    margin-right: 20px;
+    height: 30px;
+    font-weight: bold;
+    color: black;
+    font-weight: bold;
+}
+
+table, td, tr{
+    border-collapse: collapse;
+}
+td{
+    padding-left: 20px;
+    width: 400px;
+}
+#information{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: red;
+    height: 40px;
+    line-height: 40px;
+}

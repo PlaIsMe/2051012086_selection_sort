@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Selection_Sort</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link href="CSS/style.css" rel="stylesheet">
+        <script src="JS/script.js"”></script>
+    </head>
+    <body>
+        <div id = "main">
+            <div id = "dv_main">
+                <div id = "dv_header">
+                    <p style="font-weight: bold;">Số phần tử: <input type="number" id="number" value="10">&emsp;<button type="button" id="random" style="font-weight: bold;">Random</button></p>
+                    <br><input type="text" id="array"><br>
+                    <p id="information"></p>
+                </div>
+                <div id = "pointer_i"></div>
+                <div id = "pointer_i_img"></div>
+                <div id = "switch_1"></div>
+                <div id = "switch_2"></div>
+                <div id = "dv_array"></div>
+                <div id = "dv_inform"></div>                
+                <div id = "pointer_j_img"></div>
+                <div id = "pointer_j"></div>
+                <div id = "dv_footer">
+                    <button type="button" id="control_go">Go</button>               
+                </div>
+            </div>
+            <div id = "source_code">
+                <table>
+                    <tr><td>public void SeclectionSort(int M[], int n)</td></tr>
+                    <tr><td>{</td></tr>
+                    <tr><td>&ensp;int K = 0;</td></tr>
+                    <tr><td>&ensp;int PosMin;</td></tr><br>
+                    <tr><td id="line_5">&ensp;while(K &lt; n-1)</td></tr>
+                    <tr><td>&ensp;{</td></tr>
+                    <tr><td id="line_7">&emsp;int Min = M[K];</td></tr>
+                    <tr><td id="line_8">&emsp;PosMin = K;</td></tr>
+                    <tr><td id="line_9">&emsp;for(int Pos = K + 1; Pos &lt; n; Pos++)</td></tr>
+                    <tr><td>&emsp;{</td></tr>
+                    <tr><td id="line_11">&emsp;&emsp;if(Min > M[Pos])</td></tr>
+                    <tr><td>&emsp;&emsp;{</td></tr>
+                    <tr><td id="line_13">&emsp;&emsp;&emsp;Min = M[Pos];</td></tr>
+                    <tr><td id="line_14">&emsp;&emsp;&emsp;PosMin = Pos;</td></tr>
+                    <tr><td id="line_15">&emsp;&emsp;}</td></tr>
+                    <tr><td>&emsp;}</td></tr>
+                    <tr><td id="line_17">&emsp;int temp = M[K];</td></tr>
+                    <tr><td id="line_18">&emsp;M[K] = M[PosMin];</td></tr>
+                    <tr><td id="line_19">&emsp;M[PosMin] = temp;</td></tr>
+                    <tr><td id="line_20">&emsp;K++;</td></tr>
+                    <tr><td>&ensp;}</td></tr>
+                    <tr><td>}</td></tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
