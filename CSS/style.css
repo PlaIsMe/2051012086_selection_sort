@@ -18,61 +18,47 @@
 }
 #pointer_i{
     display: flex;
+    justify-content: center;
+    align-items: center;
     height: 60px;
     margin-top: 25px;
-    position: absolute;
-    float: left;
-    top: 22%;
-    left: 5%;
 }
 #pointer_i_img{
     display: flex;
+    justify-content: center;
+    align-items: center;
     height: 60px;
-    position: absolute;
-    float: left;
-    top: 30%;
-    left: 5%;
+}
+#dv_body{
+    height: 360px;
 }
 #dv_array{
     display: flex;
-    height: 56px;
-    position: absolute;
-    float: left;
-    top: 40%;
-    left: 5%;
-
+    justify-content: center;
+    align-items: center;
 }
 #dv_inform{
     display: flex;
+    justify-content: center;
+    align-items: center;
     height: 30px;
-    position: absolute;
-    float: left;
-    top: 48%;
-    left: 5%;
 }
 #pointer_j{
     display: flex;
-    height: 60px;
-    margin-top: 25px;
-    position: absolute;
-    float: left;
-    top: 53%;
-    left: 5%;
+    justify-content: center;
+    align-items: center;
+    height: 60px;  
 }
 #pointer_j_img{
     display: flex;
-    height: 60px;
-    position: absolute;
-    float: left;
-    top: 50%;
-    left: 5%;
+    justify-content: center;
+    align-items: center;
+    height: 60px;  
 }
 #dv_footer{
     display: flex;
-    position: absolute;
-    float: left;
-    top: 60%;
-    left: 60%;
+    justify-content: right;
+    justify-items: right;
 }
 
 #source_code{
