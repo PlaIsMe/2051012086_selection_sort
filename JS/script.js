@@ -45,14 +45,13 @@ $(document).ready(function (){
         $('#information').text("");
     })
     
-    $("button#control_skip").prop('disabled', true); 
 
     $("button#control_go").click(function(){    ////Thiết lập cho nút go
-        let arr = $("input#array").val().split(" ");
+        let arr = $("input#array").val().trim().split(" ");
         n = $("input#number").val();
         for(var i = 0; i < n; i++) {
         $('#dv_min').append(`<div id=min${i}></div>`);    ///Tạo div chứa chữ min
-    }
+        }
         if(n<2 || n>10){
             alert("Số phần tử lớn nhất là: 10\nSố phần tử nhỏ nhất là: 2");
         }
@@ -273,9 +272,7 @@ $(document).ready(function (){
                 $("button#control_go").prop('disabled', false);
                 $("input#number").prop('disabled', false); 
                 $("input#array").prop('disabled', false);
-                $("button#random").prop('disabled', false);                 
-                $("button#control_skip").prop('disabled', true);    
-                
+                $("button#random").prop('disabled', false);                                 
             }
             else {
                 $('#information').text("Tăng i = i + 1");
@@ -289,7 +286,7 @@ $(document).ready(function (){
 });
 
     $("button#random").click(function(){    ///Thiết lập cho nút random
-        let arr = $("input#array").val().split(" ");
+        let arr = $("input#array").val().trim().split(" ");
         n = $("input#number").val();
         if(n<2 || n>10){
             alert("Số phần tử lớn nhất là: 10\nSố phần tử nhỏ nhất là: 2");
