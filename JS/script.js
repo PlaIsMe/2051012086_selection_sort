@@ -70,6 +70,11 @@ $(document).ready(function (){
             }
             
             $("div[id *= div]").remove();   ////Xóa div cũ
+            $("div[id *= imgdown]").remove();
+            $("div[id *= pnt_down]").remove();
+            $("div[id *= imgup]").remove();
+            $("div[id *= pnt_up]").remove();
+            $("div[id *= infrm]").remove();
             for(var i = 0; i < n; i++) {    ////Tạo div mới với dữ liệu từ bàn phím
                 $('#dv_array').append(`<div id=div${i}>${arr[i]}</div>`);
                 $('#pointer_i_img').append(`<div id=imgdown${i}></div>`);
@@ -269,7 +274,8 @@ $(document).ready(function (){
                 $("input#number").prop('disabled', false); 
                 $("input#array").prop('disabled', false);
                 $("button#random").prop('disabled', false);                 
-                $("button#control_skip").prop('disabled', true);                
+                $("button#control_skip").prop('disabled', true);    
+                
             }
             else {
                 $('#information').text("Tăng i = i + 1");
