@@ -60,6 +60,7 @@ $(document).ready(function (){
             }
             $('#information').text("Hoàn thành!");
             $("button#control_go").prop('disabled', false);
+            $("button#control_skip").prop('disabled', true);
             $("input#number").prop('disabled', false); 
             $("input#array").prop('disabled', false);
             $("button#random").prop('disabled', false); 
