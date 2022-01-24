@@ -21,6 +21,8 @@ function increase_check(n, arr){       ///Kiểm tra mảng sắp xếp chưa
 }               
 
 $(document).ready(function (){ 
+    $("#control_skip").prop('disabled', true);
+
     $("input#array").focus(function(){
         $('#information').text("Nhập mảng");
     })
@@ -49,6 +51,35 @@ $(document).ready(function (){
     $("button#control_go").click(function(){    ////Thiết lập cho nút go
         let arr = $("input#array").val().trim().split(" ");
         n = $("input#number").val();
+
+        $("button#control_skip").click(function(){
+            let arr = $("input#array").val().trim().split(" ");
+            var highestTimeoutId = setTimeout(";");
+            for (var i = 0 ; i < highestTimeoutId ; i++) {
+                clearTimeout(i); 
+            }
+            $('#information').text("Hoàn thành!");
+            $("button#control_go").prop('disabled', false);
+            $("input#number").prop('disabled', false); 
+            $("input#array").prop('disabled', false);
+            $("button#random").prop('disabled', false); 
+            arr.sort(function(a, b){return a-b});
+            $("div[id *= div]").remove();   ////Xóa div cũ
+            $("div[id *= imgdown]").remove();
+            $("div[id *= pnt_down]").remove();
+            $("div[id *= imgup]").remove();
+            $("div[id *= pnt_up]").remove();
+            $("div[id *= infrm]").remove();
+
+            $("td[id *= line]").css("backgroundColor", "white");
+
+            for(var i=0; i< arr.length; i++)
+            {
+                $('#dv_array').append(`<div id=div${i}>${arr[i]}</div>`);
+            }
+            return;
+        });
+        
         for(var i = 0; i < n; i++) {
         $('#dv_min').append(`<div id=min${i}></div>`);    ///Tạo div chứa chữ min
         }
@@ -85,7 +116,8 @@ $(document).ready(function (){
             $("button#control_go").prop('disabled', true);
             $("input#number").prop('disabled', true); 
             $("input#array").prop('disabled', true);
-            $("button#random").prop('disabled', true);            
+            $("button#random").prop('disabled', true); 
+            $("#control_skip").prop('disabled', false);           
 
             $("div[id*=imgdown]").html(`<img src="Images/down_arrow.png">`);
             $("div[id*=imgup]").html(`<img src="Images/up_arrow.png">`);
