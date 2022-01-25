@@ -142,12 +142,30 @@ div[id*=infrm]{
     color: blue;
 }
 button[id*=control]{
+    background-color: #B0C5DE;
     width: 70px;
     margin-right: 20px;
     height: 30px;
     font-weight: bold;
     color: black;
     font-weight: bold;
+    border: 1px solid black;  
+}
+
+button[id*=control]:hover{
+    border-top-color: white;
+    border-left-color: white;
+}
+
+button:disabled:hover{
+    border-top-color: black;
+    border-left-color: black;
+}
+
+button:disabled{
+    border-top-color: black;
+    border-left-color: black;
+    color: #5C6E8C;
 }
 
 table, td, tr{
@@ -164,4 +182,14 @@ td{
     color: red;
     height: 40px;
     line-height: 40px;
+}
+#random{
+    background-color: #B0C5DE;
+    font-weight: bold;
+    border: 1px solid black;   
+}
+
+#random:hover{
+    border-top-color: white;
+    border-left-color: white;
 }

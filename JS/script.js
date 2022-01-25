@@ -128,6 +128,7 @@ $(document).ready(function (){
             $("div[id*=imgdown]").css("visibility", "hidden");
             $("div[id*=imgup]").css("visibility", "hidden");
         var k = 0, pos_min = 0, i = 0, min;
+
         for(let k = 0; k < n-1; k++){                        
             setTimeout(function(){
                 $('#line_5').css("backgroundColor", "#0079D9");
